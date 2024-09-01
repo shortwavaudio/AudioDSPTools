@@ -100,7 +100,7 @@ public:
   // :param inputSampleRate: The external sample rate interacting with this object.
   // :param blockSize: The largest block size that will be given to this class to process until Reset()  is called
   //     again.
-  void Reset(double inputSampleRate, int blockSize = DEFAULT_BLOCK_SIZE)
+  void Reset(double inputSampleRate, int blockSize = iplug::DEFAULT_BLOCK_SIZE)
   {
     if (mInputSampleRate == inputSampleRate && mMaxBlockSize == blockSize)
     {
